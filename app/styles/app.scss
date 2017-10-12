@@ -1,0 +1,17 @@
+@import 'ember-paper';
+@import 'ember-paper-stepper';
+
+.leaflet-wrapper {
+  height: 600px;;
+  width: 100%;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+#plotly-container {
+  width:200px;
+  height: 200px;
+}

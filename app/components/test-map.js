@@ -1,7 +1,10 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  lat: 45.519743,
-  lng: -122.680522,
-  zoom: 10
+  zoom: 15,
+  didReceiveAttrs() {
+    this._super(...arguments);
+    this.set('lat', this.get('percelen')[1][0].lat);
+    this.set('lng', this.get('percelen')[1][0].lng);
+  }
 });

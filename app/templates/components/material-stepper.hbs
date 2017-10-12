@@ -1,0 +1,36 @@
+{{#paper-stepper currentStep=currentStep onStepChange=(action "changeStep") vertical=true linear=false as |stepper|}}
+
+  {{#stepper.step label="Gaan met de tank" as |step|}}
+    {{#step.body}}
+
+    {{/step.body}}
+  {{/stepper.step}}
+  {{#stepper.step label="Kunstmest strooien" as |step|}}
+    {{#step.body}}
+      {{!-- Content here. Probably some form. --}}
+      {{plotly-chart}}
+      {{gauge-chart}}
+    {{/step.body}}
+  {{/stepper.step}}
+  {{#stepper.step label="Maisland prepareren" as |step|}}
+    {{#step.body}}
+      {{!-- Content here. Probably some form. --}}
+      awrw
+    {{/step.body}}
+  {{/stepper.step}}
+  {{#stepper.step label="Tweede snee bemesten" as |step|}}
+    {{#step.body}}
+      {{!-- Content here. Probably some form. --}}
+      awrw
+    {{/step.body}}
+  {{/stepper.step}}
+  {{#stepper.step label="Grasland managen laatste snee" as |step|}}
+    {{#step.body}}
+      {{!-- Content here. Probably some form. --}}
+      awrw
+    {{/step.body}}
+  {{/stepper.step}}
+
+  {{!-- add as many steps as necessary --}}
+
+{{/paper-stepper}}

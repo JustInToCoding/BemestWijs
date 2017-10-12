@@ -1,6 +1,9 @@
 <div class="leaflet-wrapper">
   {{#leaflet-map lat=lat lng=lng zoom=zoom}}
     {{!-- Specify child layer components here --}}
-    {{tile-layer url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"}}
+    {{tile-layer url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}}
+    {{#each percelen as |locations index|}}
+      {{polygon-layer locations=locations fillColor=(get colors index)}}
+    {{/each}}
   {{/leaflet-map}}
 </div>
