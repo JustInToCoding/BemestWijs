@@ -1,7 +1,7 @@
 {{#percelen-wrapper as |percelen perceelGegevens colors selected setStep|}}
   {{test-map percelen=percelen colors=colors selected=selected}}
   {{#paper-stepper currentStep=currentStep onStepChange=(action "changeStep" setStep) vertical=true linear=false as |stepper|}}
-    {{#stepper.step label="Gaan met de tank" as |step|}}
+    {{#stepper.step label="Eerste keer drijfmest" as |step|}}
       {{#step.body}}
         {{percelen-table percelen=perceelGegevens}}
       {{/step.body}}
@@ -10,8 +10,6 @@
       {{#step.body}}
         {{!-- Content here. Probably some form. --}}
         {{percelen-table percelen=perceelGegevens}}
-        {{plotly-chart}}
-        {{gauge-chart}}
       {{/step.body}}
     {{/stepper.step}}
     {{#stepper.step label="Maisland prepareren" as |step|}}
@@ -20,13 +18,13 @@
         {{percelen-table percelen=perceelGegevens}}
       {{/step.body}}
     {{/stepper.step}}
-    {{#stepper.step label="Tweede snee bemesten" as |step|}}
+    {{#stepper.step label="Tweede snede bemesten" as |step|}}
       {{#step.body}}
         {{!-- Content here. Probably some form. --}}
         {{percelen-table percelen=perceelGegevens}}
       {{/step.body}}
     {{/stepper.step}}
-    {{#stepper.step label="Grasland managen laatste snee" as |step|}}
+    {{#stepper.step label="Latere snedes bemesten" as |step|}}
       {{#step.body}}
         {{!-- Content here. Probably some form. --}}
         {{percelen-table percelen=perceelGegevens}}

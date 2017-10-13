@@ -1,25 +1,29 @@
-{{#paper-data-table sortProp="name" selectable=true as |table|}}
-{{#table.head as |head|}}
-  {{#head.column checkbox=true}}
-    {{#paper-checkbox disabled=true onChange=null}}{{/paper-checkbox}}
-  {{/head.column}}
-  {{#head.column}}Naam{{/head.column}}
-  {{#head.column numeric=true}}Oppervlakte{{/head.column}}
-  {{#head.column numeric=true}}Gewas{{/head.column}}
-{{/table.head}}
-{{#table.body as |body|}}
-  {{#each percelen as |perceel|}}
-    {{#body.row edit=true as |row|}}
-      {{#row.cell checkbox=true}}
-        {{#paper-checkbox
-          value=perceel.checked
-          onChange=(action (mut perceel.checked))}}
-        {{/paper-checkbox}}
-      {{/row.cell}}
-      {{#row.cell}}{{perceel.name}}{{/row.cell}}
-      {{#row.cell numeric=true}}{{perceel.Gewas}}{{/row.cell}}
-      {{#row.cell numeric=true}}{{perceel.oppervlakte}}{{/row.cell}}
-    {{/body.row}}
-  {{/each}}
-{{/table.body}}
-{{/paper-data-table}}
+{{#dialog-button dialog=(component "perceel-dialog") as |openDialog|}}
+  {{#paper-data-table sortProp="name" selectable=true as |table|}}
+  {{#table.head as |head|}}
+    {{#head.column checkbox=true}}
+      {{#paper-checkbox disabled=true onChange=null}}{{/paper-checkbox}}
+    {{/head.column}}
+    {{#head.column}}Naam{{/head.column}}
+    {{#head.column numeric=true}}Oppervlakte{{/head.column}}
+    {{#head.column numeric=true}}Gewas{{/head.column}}
+    {{#head.column numeric=true}}Plaatje{{/head.column}}
+  {{/table.head}}
+  {{#table.body as |body|}}
+    {{#each percelen as |perceel|}}
+        {{#body.row edit=true onClick=(action openDialog) as |row|}}
+          {{#row.cell checkbox=true}}
+            {{#paper-checkbox
+              value=perceel.checked
+              onChange=(action (mut perceel.checked))}}
+            {{/paper-checkbox}}
+          {{/row.cell}}
+          {{#row.cell}}{{perceel.name}}{{/row.cell}}
+          {{#row.cell numeric=true}}{{perceel.oppervlakte}}{{/row.cell}}
+          {{#row.cell numeric=true}}{{perceel.gewas}}{{/row.cell}}
+          {{#row.cell numeric=true}}<img src="assets/optijd.png" />{{/row.cell}}
+        {{/body.row}}
+    {{/each}}
+  {{/table.body}}
+  {{/paper-data-table}}
+{{/dialog-button}}

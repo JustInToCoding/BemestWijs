@@ -1,0 +1,4 @@
+{{#if showDialog}}
+  {{component dialog isShowing=showDialog origin=dialogOrigin parent=dialogOrigin}}
+{{/if}}
+{{yield (action "openDialog")}}

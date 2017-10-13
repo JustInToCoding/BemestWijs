@@ -10,6 +10,11 @@ define('bemest-wijs/tests/app.lint-test', [], function () {
     assert.ok(true, 'app.js should pass ESLint\n\n');
   });
 
+  QUnit.test('components/dialog-button.js', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'components/dialog-button.js should pass ESLint\n\n12:7 - Unexpected console statement. (no-console)');
+  });
+
   QUnit.test('components/gauge-chart.js', function (assert) {
     assert.expect(1);
     assert.ok(false, 'components/gauge-chart.js should pass ESLint\n\n98:5 - \'Plotly\' is not defined. (no-undef)');
@@ -23,6 +28,11 @@ define('bemest-wijs/tests/app.lint-test', [], function () {
   QUnit.test('components/paper-step.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/paper-step.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('components/perceel-dialog.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/perceel-dialog.js should pass ESLint\n\n');
   });
 
   QUnit.test('components/percelen-table.js', function (assert) {
@@ -243,6 +253,35 @@ define('bemest-wijs/tests/helpers/start-app', ['exports', 'bemest-wijs/app', 'be
     });
   }
 });
+define('bemest-wijs/tests/integration/components/dialog-button-test', ['ember-qunit'], function (_emberQunit) {
+  'use strict';
+
+  (0, _emberQunit.moduleForComponent)('dialog-button', 'Integration | Component | dialog button', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      "id": "QEZ6zOr6",
+      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"dialog-button\"],false]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      "id": "r128kMe7",
+      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"dialog-button\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
 define('bemest-wijs/tests/integration/components/gauge-chart-test', ['ember-qunit'], function (_emberQunit) {
   'use strict';
 
@@ -295,6 +334,35 @@ define('bemest-wijs/tests/integration/components/material-stepper-test', ['ember
     this.render(Ember.HTMLBars.template({
       "id": "dtvCAQm/",
       "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"material-stepper\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
+define('bemest-wijs/tests/integration/components/perceel-dialog-test', ['ember-qunit'], function (_emberQunit) {
+  'use strict';
+
+  (0, _emberQunit.moduleForComponent)('perceel-dialog', 'Integration | Component | perceel dialog', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      "id": "eqjs1jfK",
+      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"perceel-dialog\"],false]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      "id": "z8iXWswe",
+      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"perceel-dialog\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
       "meta": {}
     }));
 
@@ -448,6 +516,11 @@ define('bemest-wijs/tests/tests.lint-test', [], function () {
     assert.ok(true, 'helpers/start-app.js should pass ESLint\n\n');
   });
 
+  QUnit.test('integration/components/dialog-button-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/dialog-button-test.js should pass ESLint\n\n');
+  });
+
   QUnit.test('integration/components/gauge-chart-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/components/gauge-chart-test.js should pass ESLint\n\n');
@@ -456,6 +529,11 @@ define('bemest-wijs/tests/tests.lint-test', [], function () {
   QUnit.test('integration/components/material-stepper-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/components/material-stepper-test.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('integration/components/perceel-dialog-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/perceel-dialog-test.js should pass ESLint\n\n');
   });
 
   QUnit.test('integration/components/percelen-table-test.js', function (assert) {

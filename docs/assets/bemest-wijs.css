@@ -20606,3 +20606,6 @@ table.md-table {
 #plotly-container {
   width: 200px;
   height: 200px; }
+
+.md-dialog-container {
+  z-index: 9999; }
