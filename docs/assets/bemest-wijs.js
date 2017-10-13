@@ -3023,6 +3023,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("bemest-wijs/app")["default"].create({"name":"bemest-wijs","version":"0.0.0+217c7956"});
+  require("bemest-wijs/app")["default"].create({"name":"bemest-wijs","version":"0.0.0+1ef2ea25"});
 }
 //# sourceMappingURL=bemest-wijs.map
