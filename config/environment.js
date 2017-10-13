@@ -5,7 +5,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'bemest-wijs',
     environment,
-    rootURL: '/',
+    rootURL: 'BemestWijs/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
