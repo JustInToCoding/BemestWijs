@@ -20596,7 +20596,7 @@ table.md-table {
                 transform: scaleY(0.4) scaleX(0.8); }
 
 .leaflet-wrapper {
-  height: 600px;
+  height: 450px;
   width: 100%; }
 
 .leaflet-container {
