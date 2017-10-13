@@ -2551,7 +2551,7 @@ define('bemest-wijs/router', ['exports', 'bemest-wijs/config/environment'], func
   });
 
   Router.map(function () {
-    this.route('test-page');
+    this.route('test-page', { path: '/' });
   });
 
   exports.default = Router;
@@ -3023,6 +3023,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("bemest-wijs/app")["default"].create({"name":"bemest-wijs","version":"0.0.0+1ef2ea25"});
+  require("bemest-wijs/app")["default"].create({"name":"bemest-wijs","version":"0.0.0+fa6578be"});
 }
 //# sourceMappingURL=bemest-wijs.map
