@@ -91,12 +91,7 @@ export default Component.extend({
             'text': '50',
             'showarrow': false
         }
-    ],
-    margin: {
-      b: -50,
-      t: -50,
-      pad: 4
-    }
+    ]
   },
 
   didInsertElement() {

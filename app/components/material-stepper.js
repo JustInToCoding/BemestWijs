@@ -5,7 +5,12 @@ export default Component.extend({
 
   actions: {
     changeStep(newStep) {
-      this.set('currentStep', this.get('currentStep') === newStep ? -1 : newStep);
+      if(this.get('currentStep') === newStep) {
+        this.set('currentStep', -1);
+      } else {
+        this.set('currentStep', newStep);
+      }
+
     }
   }
 });

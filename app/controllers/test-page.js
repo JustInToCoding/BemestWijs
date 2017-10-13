@@ -4,8 +4,14 @@ export default Controller.extend({
   currentStep: -1,
 
   actions: {
-    changeStep(newStep) {
-      this.set('currentStep', this.get('currentStep') === newStep ? -1 : newStep);
+    changeStep(setStep, newStep) {
+      if(this.get('currentStep') === newStep) {
+        this.set('currentStep', -1);
+        setStep(-1);
+      } else {
+        this.set('currentStep', newStep);
+        setStep(newStep);
+      }
     }
   }
 });
