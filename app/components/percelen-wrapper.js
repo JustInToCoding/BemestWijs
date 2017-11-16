@@ -70,30 +70,30 @@ export default Component.extend({
     '#FF0000',
     '#FF0000',
     '#FF0000',
+    '#00FF00',
+    '#00FF00',
+    '#FFA500', // Erg smalle
+    '#00FF00',
+    '#00FF00',
     '#FF0000',
     '#FF0000',
+    '#FFA500',
+    '#FFA500', //mais
+    '#00FF00', //mais
+    '#00FF00',
+    '#00FF00',
+    '#00FF00',
+    '#fc8a07',
+    '#fc8a07',
     '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
-    '#FF0000',
+    '#00FF00',
+    '#00FF00',
+    '#00FF00',
+    '#00FF00',
+    '#00FF00',
+    '#00FF00',
+    '#00FF00',
+    '#FFA500',
     '#FF0000'
   ],
   selected: -1,
@@ -111,6 +111,11 @@ export default Component.extend({
     this.set('perceelGegevens2', this.get('perceelGegevens').slice(16, 18));
     this.set('perceelGegevens3', this.get('perceelGegevens').slice(18, 22));
     this.set('perceelGegevens4', this.get('perceelGegevens').slice(22, 27));
+    this.set('colors0', this.get('colors').slice(0, 5));
+    this.set('colors1', this.get('colors').slice(6, 16));
+    this.set('colors2', this.get('colors').slice(16, 18));
+    this.set('colors3', this.get('colors').slice(18, 22));
+    this.set('colors4', this.get('colors').slice(22, 27));
   },
 
   actions: {
