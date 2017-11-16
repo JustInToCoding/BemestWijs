@@ -32,41 +32,41 @@ export default Component.extend({
     [{lng:6.338006189999835,lat:52.19934914999994},{lng:6.338019400000095,lat:52.19935748999983},{lng:6.338486270000395,lat:52.19965225000011},{lng:6.338686580000389,lat:52.19977400999977},{lng:6.338896439999787,lat:52.1999043099996},{lng:6.338096570000729,lat:52.20038662999966},{lng:6.338104042191286,lat:52.20039084201885},{lng:6.339989059999592,lat:52.20105447999981},{lng:6.339989145428495,lat:52.20105483844365},{lng:6.339989659998254,lat:52.20105501999962},{lng:6.339721130000398,lat:52.19976314000012},{lng:6.339695060000067,lat:52.19971470000047},{lng:6.339678750000036,lat:52.19972078},{lng:6.339446269999873,lat:52.19925652999988},{lng:6.339404730000328,lat:52.19921406000019},{lng:6.338875360000298,lat:52.19889264000042},{lng:6.337962880001048,lat:52.19931981999964},{lng:6.338006189999835,lat:52.19934914999994}],
   ],
   perceelGegevens: [
-    {name: 'perceel 1', oppervlakte: '58', gewas: 'Gras', checked: true},
-    {name: 'perceel 2', oppervlakte: '12', gewas: 'Gras', checked: true},
-    {name: 'perceel 3', oppervlakte: '35', gewas: 'Gras', checked: true},
-    {name: 'perceel 4', oppervlakte: '72', gewas: 'Gras'},
-    {name: 'perceel 5', oppervlakte: '527', gewas: 'Gras'},
-    {name: 'perceel 6', oppervlakte: '45', gewas: 'Gras'},
-    {name: 'perceel 7', oppervlakte: '828', gewas: 'Gras'},
-    {name: 'perceel 8', oppervlakte: '45', gewas: 'Gras'},
-    {name: 'perceel 9', oppervlakte: '54', gewas: 'Gras'},
-    {name: 'perceel 10', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 11', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 12', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 13', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 14', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 15', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 16', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 17', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 18', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 19', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 20', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 21', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 22', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 23', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 24', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 25', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 26', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 27', oppervlakte: '58', gewas: 'Gras'},
-    {name: 'perceel 28', oppervlakte: '58', gewas: 'Gras'},
+    {name: 'perceel 1', oppervlakte: '58', gewas: 'Gras', checked: true, percentage: 80},
+    {name: 'perceel 2', oppervlakte: '12', gewas: 'Gras', checked: true, percentage: 60},
+    {name: 'perceel 3', oppervlakte: '35', gewas: 'Gras', checked: true , percentage: 50},
+    {name: 'perceel 4', oppervlakte: '72', gewas: 'Gras', percentage: 45},
+    {name: 'perceel 5', oppervlakte: '527', gewas: 'Gras', percentage: 15},
+    {name: 'perceel 6', oppervlakte: '45', gewas: 'Gras', percentage: 10},
+    {name: 'perceel 7', oppervlakte: '828', gewas: 'Gras', percentage: 100},
+    {name: 'perceel 8', oppervlakte: '45', gewas: 'Gras', percentage: 90},
+    {name: 'perceel 9', oppervlakte: '54', gewas: 'Gras', percentage: 55},
+    {name: 'perceel 10', oppervlakte: '58', gewas: 'Gras', percentage: 40},
+    {name: 'perceel 11', oppervlakte: '58', gewas: 'Gras', percentage: 40},
+    {name: 'perceel 12', oppervlakte: '58', gewas: 'Gras', percentage: 35},
+    {name: 'perceel 13', oppervlakte: '58', gewas: 'Gras', percentage: 30},
+    {name: 'perceel 14', oppervlakte: '58', gewas: 'Gras', percentage: 25},
+    {name: 'perceel 15', oppervlakte: '58', gewas: 'Gras', percentage: 5},
+    {name: 'perceel 16', oppervlakte: '58', gewas: 'Gras', percentage: 0},
+    {name: 'perceel 17', oppervlakte: '58', gewas: 'Mais', percentage: 35},
+    {name: 'perceel 18', oppervlakte: '58', gewas: 'Mais', percentage: 30},
+    {name: 'perceel 19', oppervlakte: '58', gewas: 'Gras', percentage: 60},
+    {name: 'perceel 20', oppervlakte: '58', gewas: 'Gras', percentage: 55},
+    {name: 'perceel 21', oppervlakte: '58', gewas: 'Gras', percentage: 48},
+    {name: 'perceel 22', oppervlakte: '58', gewas: 'Gras', percentage: 45},
+    {name: 'perceel 23', oppervlakte: '58', gewas: 'Gras', percentage: 43},
+    {name: 'perceel 24', oppervlakte: '58', gewas: 'Gras', percentage: 37},
+    {name: 'perceel 25', oppervlakte: '58', gewas: 'Gras', percentage: 32},
+    {name: 'perceel 26', oppervlakte: '58', gewas: 'Gras', percentage: 27},
+    {name: 'perceel 27', oppervlakte: '58', gewas: 'Gras', percentage: 22},
+    {name: 'perceel 28', oppervlakte: '58', gewas: 'Gras', percentage: 17},
   ],
   colors: [
-    '#00FF00',
-    '#0000FF',
     '#FF0000',
     '#00FF00',
     '#00FF00',
+    '#00FF00',
+    '#FF0000',
     '#FF0000',
     '#FF0000',
     '#FF0000',
@@ -101,12 +101,12 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    this.set('percelenStep0', this.get('percelen').slice(0, 6));
+    this.set('percelenStep0', this.get('percelen').slice(0, 5));
     this.set('percelenStep1', this.get('percelen').slice(6, 16));
     this.set('percelenStep2', this.get('percelen').slice(16, 18));
     this.set('percelenStep3', this.get('percelen').slice(18, 22));
     this.set('percelenStep4', this.get('percelen').slice(22, 27));
-    this.set('perceelGegevens0', this.get('perceelGegevens').slice(0, 6));
+    this.set('perceelGegevens0', this.get('perceelGegevens').slice(0, 5));
     this.set('perceelGegevens1', this.get('perceelGegevens').slice(6, 16));
     this.set('perceelGegevens2', this.get('perceelGegevens').slice(16, 18));
     this.set('perceelGegevens3', this.get('perceelGegevens').slice(18, 22));

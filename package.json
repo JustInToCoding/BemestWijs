@@ -11,7 +11,7 @@
   },
   "repository": "",
   "scripts": {
-    "build": "ember build",
+    "build": "ember build -prod --output-path docs/",
     "start": "ember server",
     "test": "ember test"
   },

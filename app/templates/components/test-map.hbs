@@ -4,7 +4,7 @@
     {{tile-layer url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"}}
     {{tile-layer url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}}
     {{#each percelen as |locations index|}}
-      {{polygon-layer locations=locations fillColor=(get colors index)}}
+      {{polygon-layer locations=locations fillColor=(get colors index) color="#3388ff" weight=1 fillOpacity=0.8 opacity=0.5}}
     {{/each}}
   {{/leaflet-map}}
 </div>

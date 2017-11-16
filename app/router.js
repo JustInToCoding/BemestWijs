@@ -8,6 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('test-page', { path: '/' });
+  this.route('gauge');
 });
 
 export default Router;

@@ -7,7 +7,7 @@
     {{#head.column}}Naam{{/head.column}}
     {{#head.column numeric=true}}Oppervlakte{{/head.column}}
     {{#head.column numeric=true}}Gewas{{/head.column}}
-    {{#head.column numeric=true}}Plaatje{{/head.column}}
+    {{#head.column numeric=true}}{{/head.column}}
   {{/table.head}}
   {{#table.body as |body|}}
     {{#each percelen as |perceel|}}
@@ -21,7 +21,7 @@
           {{#row.cell}}{{perceel.name}}{{/row.cell}}
           {{#row.cell numeric=true}}{{perceel.oppervlakte}}{{/row.cell}}
           {{#row.cell numeric=true}}{{perceel.gewas}}{{/row.cell}}
-          {{#row.cell numeric=true}}<img src="assets/optijd.png" />{{/row.cell}}
+          {{#row.cell numeric=true}}{{linear-gauge-chart percentage=perceel.percentage}}{{/row.cell}}
         {{/body.row}}
     {{/each}}
   {{/table.body}}
